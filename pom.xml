@@ -31,7 +31,7 @@
     <java.version>17</java.version>
     <grpc.version>1.65.1</grpc.version>
     <protobuf.version>4.27.2</protobuf.version>
-    <spark.version>4.0.0-preview1</spark.version><!-- Use 4.0.0+ to allow jakarta -->
+    <spark.version>4.0.0-preview1</spark.version>    <!-- Use 4.0.0+ to allow jakarta -->
   </properties>
   <dependencies>
     <dependency>
@@ -163,10 +163,10 @@
       <scope>provided</scope>
     </dependency>
     <!-- https://mvnrepository.com/artifact/jakarta.servlet/jakarta.servlet-api -->
-    <dependency><!-- To avoid ClassNotFoundException: jakarta.servlet.SingleThreadModel -->
+    <dependency>      <!-- To avoid ClassNotFoundException: jakarta.servlet.SingleThreadModel -->
       <groupId>jakarta.servlet</groupId>
       <artifactId>jakarta.servlet-api</artifactId>
-      <version>5.0.0</version><!-- Question: I am using springboot 3.x, it states that only servlet api 6.0+ is supported, but I am using 5.0.0 -->
+      <version>5.0.0</version>      <!-- Question: I am using springboot 3.x, it states that only servlet api 6.0+ is supported, but I am using 5.0.0 -->
       <scope>provided</scope>
     </dependency>
   </dependencies>
